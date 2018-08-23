@@ -15,6 +15,6 @@ class CashRegister
 
   def apply_discount
     discount_amt = self.total * (self.discount/100)
-    self.total -= discount_amt
+    self.total = self.total * discount_amt
   end
 end
